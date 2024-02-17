@@ -1,0 +1,137 @@
+<!--calculator-->
+<!DOCTYPE html>
+<html>
+ <head>
+ <meta charset="utf-8">
+ <title>Calculator</title>
+ <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+ <link href="style.css" type="text/css" rel="stylesheet" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ </head>
+ <body class="color">
+ <header>
+ <div class="logo">
+ <img src="./resources/ep.jpg" />
+ </div>
+ </header>
+ <h1>Calculate!</h1>
+ <div id="calculator">
+ <div id="screen"></div>
+ <div id="buttons">
+ <div id="numbers">
+ <div class="number">1</div> id= "num1"
+ <div class="number">2</div> id= "num2"
+ <div class="number">3</div> id= "num3"
+ <div class="number">4</div> id= "num4"
+ <div class="number">5</div> id= "num5"
+ <div class="number">6</div> id= "num6"
+ <div class="number">7</div> id= "num7"
+ <div class="number">8</div> id= "num8"
+ <div class="number">9</div> id= "num9"
+ <div class="number">0</div> id= "num0"
+ <div class="operator">=</div> id= "equal"
+ <div class="clear number">C</div> id= "clear"
+ </div>
+ <div id="operators">
+ <div class="operator">+</div>
+ <div class="operator">-</div>
+ <div class="operator">x</div>
+ <div class="operator">/</div>
+ </div>
+ </div> <!--closes buttons-->
+</body>
+</html>
+
+/*Calculator CSS*/
+.logo {
+ width: 10%;
+ margin: 50px;
+}
+img {
+ width: 100%;
+}
+h1 {
+ text-align: center;
+}
+#calculator {
+ display: flex;
+ flex-direction: column;
+ width: 280px;
+ height: 350px;
+ margin:auto;
+ background-color: darkgray;
+ border: solid 5px #000;
+}
+#screen {
+ background-color: gray;
+ height: 50px;
+ width: 90%;
+ margin: 10px auto;
+}
+#numbers {
+ display: flex;
+ flex-wrap: wrap;
+}
+.number,
+.operator {
+ background-color: yellow;
+ width: 60px;
+ height: 60px;
+ margin: 5px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-size: 2rem;
+ font-weight: bold;
+ box-shadow: 3px 3px #888888;
+}
+.number:active {
+ box-shadow: 0px 0px;
+}
+       document.getElementById("num1").onclick = function write1()
+       {
+        document.getElementById("screen").innerHTML = "1";
+       }
+       document.getElementById("clear").onclick = function writeClear()
+       {
+        document.getElementById("screen").innerHTML = "";
+       }
+       document.getElementById("num2").onclick = function write1()
+       {
+        document.getElementById("screen").innerHTML = "1";
+       }
+       document.getElementById("num3").onclick = function write1()
+       {
+        document.getElementById("screen").innerHTML = "1";
+       }
+       document.getElementById("num4").onclick = function write1()
+       {
+        document.getElementById("screen").innerHTML = "1";
+       }
+       document.getElementById("num5").onclick = function write1()
+       {
+        document.getElementById("screen").innerHTML = "1";
+       }
+       document.getElementById("num6").onclick = function write1()
+       {
+        document.getElementById("screen").innerHTML = "1";
+       }
+       document.getElementById("num7").onclick = function write1()
+       {
+        document.getElementById("screen").innerHTML = "1";
+       }
+       document.getElementById("num8").onclick = function write1()
+       {
+        document.getElementById("screen").innerHTML = "1";
+       }
+       document.getElementById("num9").onclick = function write1()
+       {
+        document.getElementById("screen").innerHTML = "1";
+       }
+       document.getElementById("num0").onclick = function write1()
+       {
+        document.getElementById("screen").innerHTML = "1";
+       }
+       <source> https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js
+       /*When someone clicks on a number, it saves the number to do the math. */
+    </CSS>
